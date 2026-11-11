@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveBlur Privacy Policy</title>
+<style>
+body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; background: #fff; }
+a { color: #0645ad; }
+h1 { font-size: 1.6em; margin: 0 0 .3em; }
+h2 { font-size: 1.2em; margin-top: 2.2em; }
+footer { margin-top: 3em; font-size: .9em; color: #555; }
+@media (prefers-color-scheme: dark) { body { color: #ddd; background: #111; } a { color: #8ab4f8; } footer { color: #999; } }
+</style>
+</head>
+<body>
+<h1>LiveBlur Privacy Policy</h1>
+<p>Last updated: 2026-11-11</p>
+<p>This policy describes LiveBlur's free experimental beta candidate, which has not yet been released.</p>
+<p><strong>LiveBlur is a reversible visual aid, not a redaction or data-loss prevention tool.</strong> Original text remains in the DOM. Default light blur may be recoverable, and solid block is also only a visual cover. New or replaced content can be missed. After refreshing or navigating, reopen the extension and apply masks again. Check every item before screen sharing or taking a screenshot.</p>
+<h2>Page data and temporary changes</h2>
+<p>LiveBlur processes page text and selected elements locally in your browser when you use its page actions. Scanning reads current visible text for heuristic pattern matches. Masking temporarily changes page DOM and styles; it does not delete or secure the underlying content. The extension does not upload or persist page content and makes no network requests. It uses no analytics, tracking, remote code or third-party services.</p>
+<p>Unblur All clears extension masks and generated text wrappers. Refreshing the page clears the temporary effects. Site rules and masked page content are not saved. These actions do not delete the original page content or change how the website itself handles your data.</p>
+<h2>Permissions and local preferences</h2>
+<ul>
+<li>activeTab grants temporary access to the current tab when you click the extension. No host permissions are requested.</li>
+<li>scripting injects the bundled local page script to pick elements, read text for a scan, and apply or clear visual masks.</li>
+<li>storage saves only language, theme and mask-strength preferences in chrome.storage.local, not page text or site rules.</li>
+</ul>
+<p>Removing LiveBlur from the browser deletes its stored local preferences. If a page remains open with visual changes, refresh it to clear those temporary effects. Removing masks or preferences does not erase screenshots or recordings you have already made.</p>
+<h2>Privacy questions</h2>
+<p><a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BLiveBlur%5D%20">Open a support issue</a>. GitHub issues are public and handled by GitHub, outside the extension's local processing. Do not include confidential page text, screenshots, credentials or other secrets.</p>
+<section lang="zh-CN" id="zh">
+<h2>LiveBlur 隐私政策</h2>
+<p>更新日期：2026-11-11</p>
+<p>本政策适用于 LiveBlur 的免费实验性 beta 候选版本，产品尚未上线。</p>
+<p><strong>LiveBlur 是可逆的视觉辅助，不是脱敏工具，也不是防泄漏工具。</strong> 原始文字仍在 DOM 中。默认轻度模糊可能被恢复，实色遮挡 block 也仅是视觉覆盖。新增或替换的内容可能漏掉。刷新或导航后，需重新打开扩展并重新应用遮挡。共享屏幕或截图前必须逐项检查。</p>
+<h2>页面数据与临时修改</h2>
+<p>使用页面功能时，LiveBlur 会在浏览器本地处理页面文字和所选元素。扫描会读取当前可见文字，按规则尝试匹配。遮挡通过临时修改页面 DOM 和样式实现，不会删除原文，也不会保护底层内容。扩展不上传或持久保存页面内容，不发出网络请求，不使用统计分析、跟踪、远程代码或第三方服务。</p>
+<p>“全部取消模糊”清除扩展添加的遮挡和文字包装元素。刷新页面会清除临时效果。扩展不保存站点规则或被遮挡的页面内容。这些操作不会删除页面原文，也不会改变网站自身处理数据的方式。</p>
+<h2>权限、本地偏好与删除</h2>
+<ul>
+<li>activeTab 在你点击扩展后授予当前标签页的临时访问权限。扩展不申请主机权限。</li>
+<li>scripting 注入随扩展打包的本地页面脚本，用于选择元素、读取文字进行扫描，以及应用或清除视觉遮挡。</li>
+<li>storage 只在 chrome.storage.local 保存语言、主题和遮挡强度偏好，不保存页面文字或站点规则。</li>
+</ul>
+<p>卸载 LiveBlur 会删除扩展保存的本地偏好。如果仍然打开的页面保留了视觉修改，请刷新页面清除临时效果。移除遮挡或删除偏好不会删除你已经生成的截图或录屏。</p>
+<h2>隐私问题</h2>
+<p>可以<a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BLiveBlur%5D%20">提交支持 issue</a>。GitHub issue 是公开的，由 GitHub 处理，不属于扩展的本地处理流程。不要提交机密页面文字、截图、登录凭据或其他秘密。</p>
+</section>
+<footer><a href="./">LiveBlur</a> · <a href="../">All extensions</a></footer>
+</body>
+</html>

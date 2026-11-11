@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveBlur</title>
+<style>
+body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; background: #fff; }
+a { color: #0645ad; }
+h1 { font-size: 1.6em; margin: 0 0 .3em; }
+h2 { font-size: 1.2em; margin-top: 2.2em; }
+footer { margin-top: 3em; font-size: .9em; color: #555; }
+@media (prefers-color-scheme: dark) { body { color: #ddd; background: #111; } a { color: #8ab4f8; } footer { color: #999; } }
+</style>
+</head>
+<body>
+<h1>LiveBlur</h1>
+<p><strong>Free experimental beta. Not yet released.</strong> This page describes the beta candidate, not an available installation. No installation link is available yet. Expect limitations and incomplete live-site verification.</p>
+<p><strong>Warning: LiveBlur is a reversible visual aid, not a redaction or data-loss prevention tool.</strong> Original text remains in the page DOM. The default light blur, and blur in general, may be recoverable. Solid block is also only a visual cover, not deletion or secure redaction. Do not rely on either to protect confidential information.</p>
+<p><strong>Review every item before sharing your screen or a screenshot.</strong> New or replaced content can be missed. Refreshing or navigating requires you to reopen the extension and apply masks again. Do not share a page if you cannot confirm that it is safe to show.</p>
+<p>LiveBlur can visually mask individual elements, selected text within a single text node, or pattern matches in the current page's visible text. The one-time scan looks for email addresses, phone numbers, long digit strings and IBAN-like patterns. Matches are heuristic and can be wrong or incomplete.</p>
+<h2>Using the beta</h2>
+<p>Choose light blur, strong blur or solid block. Use Pick Elements to hover and click an element, Blur Selection for selected text, or Scan current content for a single scan. Cross-element text selections are refused. Pick Elements can mask a deliberately chosen form field without changing its value. Esc or the page's Done button stops the picker; closing the popup alone does not. Undo last removes the latest mask, and Unblur All clears the extension's masks and generated text wrappers.</p>
+<h2>What the scan misses</h2>
+<p>The scan does not cover iframe contents, Shadow DOM, canvas, CSS-generated text, images, password values or form fields. It is not continuous: new messages, replaced content and pagination require another scan and a fresh manual review. Site rules are not saved, and Remember on this site is not available. Live behavior on some pages remains unverified; a mask count is not evidence that all private information is covered.</p>
+<h2>Local processing</h2>
+<p>LiveBlur reads page text and selected elements locally, and temporarily changes the page DOM and styles to display masks. It does not upload or persist page content. Only language, theme and mask-strength preferences are saved in local extension storage. No account, analytics, remote code or network service is used. The privacy policy explains activeTab, scripting and storage permissions and how to delete local preferences.</p>
+<p><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BLiveBlur%5D%20">Get help or report a problem</a>. GitHub issues are public; do not include confidential page text, screenshots, credentials or other secrets.</p>
+<section lang="zh-CN" id="zh">
+<h2>LiveBlur 中文说明</h2>
+<p><strong>免费实验性测试版，尚未上线。</strong> 本页介绍待发布的 beta 候选版本，不代表已经可以安装。目前没有安装链接。功能存在限制，真实网站上的使用验证尚未完成。</p>
+<p><strong>警告：LiveBlur 是可逆的视觉辅助，不是脱敏工具，也不是防泄漏工具。</strong> 原始文字仍留在页面 DOM 中。默认的轻度模糊以及其他模糊效果都可能被恢复。实色遮挡 block 也仅是视觉覆盖，不会删除原文，不等于安全脱敏。不要依赖这些效果保护机密信息。</p>
+<p><strong>共享屏幕或截图前，必须逐项检查。</strong> 新增或替换的动态内容可能漏掉。刷新或导航后，需要重新打开扩展并重新应用遮挡。如果不能确认页面适合公开，就不要分享。</p>
+<p>LiveBlur 可对单个元素、单一文本节点中的选中文字或当前页面可见文字中的模式匹配结果施加视觉遮挡。单次扫描会尝试匹配邮箱、电话号码、长数字串和类似 IBAN 的格式。规则可能误报，也可能漏报。</p>
+<h2>如何使用</h2>
+<p>先选择轻度模糊、强模糊或实色遮挡。使用“选择元素”悬停后点击元素，用“模糊选中文字”处理选区，或用“扫描当前内容”执行一次扫描。跨元素的文字选区会被拒绝。手动选择元素可遮挡你明确选中的表单字段，但不会修改字段值。Esc 或页面上的“完成”按钮会停止选择器，仅关闭弹窗不会停止。“撤销上一步”移除最近的遮挡，“全部取消模糊”清除扩展添加的遮挡和文字包装元素。</p>
+<h2>扫描范围与遗漏</h2>
+<p>扫描不覆盖 iframe 内部、Shadow DOM、canvas、CSS 生成的文字、图片、密码值或表单字段。扫描不是持续监控，新消息、替换内容和翻页后都需要重新扫描并逐项检查。站点规则不会保存，“记住此站点”尚不可用。部分页面的真实运行效果尚未验证，遮挡数量不能证明所有私人信息都已覆盖。</p>
+<h2>本地处理</h2>
+<p>LiveBlur 在本地读取页面文字和所选元素，临时修改页面 DOM 和样式以显示遮挡，不上传或持久保存页面内容。扩展只在本地存储中保存语言、主题和遮挡强度偏好，不需要账号，不使用统计分析、远程代码或网络服务。隐私政策说明了 activeTab、scripting、storage 的具体用途，以及如何删除本地偏好。</p>
+<p><a href="privacy.html#zh">隐私政策</a> · <a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BLiveBlur%5D%20">反馈问题</a>。GitHub issue 是公开的，请勿附上机密页面文字、截图、登录凭据或其他秘密。</p>
+</section>
+<footer>LiveBlur is an independent extension and is not affiliated with the sites it works on. <a href="../">All extensions</a></footer>
+</body>
+</html>

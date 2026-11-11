@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSSPeek</title>
+<style>
+body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; background: #fff; }
+a { color: #0645ad; }
+h1 { font-size: 1.6em; margin: 0 0 .3em; }
+h2 { font-size: 1.2em; margin-top: 2.2em; }
+footer { margin-top: 3em; font-size: .9em; color: #555; }
+@media (prefers-color-scheme: dark) { body { color: #ddd; background: #111; } a { color: #8ab4f8; } footer { color: #999; } }
+</style>
+</head>
+<body>
+<h1>CSSPeek</h1>
+<p><strong>Free experimental beta. Not yet released.</strong> This page describes the beta candidate, not an available installation. No installation link is available yet. Expect limitations and incomplete live-site verification.</p>
+<p>Inspect an element by hovering, pin it with a click, and copy a computed CSS rule, computed declarations or its outerHTML. The inspector shows size, a box-model highlight and diagram, grouped computed styles, color swatches and font details.</p>
+<h2>Using the beta</h2>
+<p>On a supported website, opening CSSPeek starts inspection by default. Turn off Start when opened in the popup to start with the button instead. Dismiss the popup to reach the page, hover an element and click to pin it. Resume selects another element. Esc or Exit removes the inspector. You can drag, collapse or move the panel to reach covered elements. If clipboard access is denied, select and copy the text manually from the displayed text field.</p>
+<h2>What a copy does not include</h2>
+<p>The CSS output is a snapshot of selected computed properties at the current viewport and content, not the original stylesheet. It does not recreate responsive rules, pseudo-elements, CSS variables, animations or every CSS property. Closed shadow roots, frame contents, browser internal pages and protected sites are not supported. Physical hover and panel access on live sites have not been fully verified.</p>
+<p><strong>Copied HTML can contain private page content.</strong> Review the entire outerHTML before sharing it. Copying CSS or HTML is your choice; clipboard contents may become available to other apps or sites when you paste them.</p>
+<h2>Local processing</h2>
+<p>CSSPeek reads the current page's DOM and computed styles when inspection starts, and processes them locally in that tab. It does not upload or persist page content. Only language and Start when opened preferences are saved in local extension storage. No account, analytics, remote code or network service is used. The privacy policy explains activeTab, scripting and storage permissions and how to delete local preferences.</p>
+<p><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BCSSPeek%5D%20">Get help or report a problem</a>. GitHub issues are public; do not include private page HTML, credentials or other secrets.</p>
+<section lang="zh-CN" id="zh">
+<h2>CSSPeek 中文说明</h2>
+<p><strong>免费实验性测试版，尚未上线。</strong> 本页介绍待发布的 beta 候选版本，不代表已经可以安装。目前没有安装链接。功能存在限制，真实网站上的使用验证尚未完成。</p>
+<p>悬停查看页面元素，点击固定后，可复制一条计算后的 CSS 规则、CSS 声明或元素的 outerHTML。检查面板显示尺寸、盒模型高亮和示意图、分组样式、色块与字体信息。</p>
+<h2>如何使用</h2>
+<p>在支持的网页上打开 CSSPeek，默认立即启动检查。关闭弹窗里的“打开时启动”后，可改为按按钮启动。收起弹窗后，在页面上悬停并点击固定元素。“继续”用于选择其他元素，Esc 或“退出”移除检查器。面板可拖动、折叠或移到另一角，方便选择被挡住的元素。如果剪贴板访问被拒绝，可在显示的文本框中选择文字，手动复制。</p>
+<h2>复制结果的边界</h2>
+<p>CSS 输出只是当前窗口尺寸和内容下部分计算样式的快照，不是原始样式表。它不会重建响应式规则、伪元素、CSS 变量、动画或全部 CSS 属性。不支持封闭的 Shadow DOM、框架内页面、浏览器内部页面和受保护站点。真实网站上的物理悬停和面板可达性尚未完全验证。</p>
+<p><strong>复制的 HTML 可能包含页面私人内容。</strong> 分享前请完整检查 outerHTML。复制 CSS 或 HTML 由你主动触发；粘贴后，其他应用或网站可能获得剪贴板中的内容。</p>
+<h2>本地处理</h2>
+<p>启动检查后，CSSPeek 会读取当前页面的 DOM 和计算样式，并在该标签页本地处理，不上传或持久保存页面内容。扩展只在本地存储中保存语言和打开时启动的偏好，不需要账号，不使用统计分析、远程代码或网络服务。隐私政策说明了 activeTab、scripting、storage 的具体用途，以及如何删除本地偏好。</p>
+<p><a href="privacy.html#zh">隐私政策</a> · <a href="https://github.com/pinguarmy/extensions/issues/new?template=support.yml&amp;title=%5BCSSPeek%5D%20">反馈问题</a>。GitHub issue 是公开的，请勿附上私人页面 HTML、登录凭据或其他秘密。</p>
+</section>
+<footer>CSSPeek is an independent extension and is not affiliated with the sites it works on. <a href="../">All extensions</a></footer>
+</body>
+</html>
